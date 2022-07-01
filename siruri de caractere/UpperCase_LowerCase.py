@@ -1,4 +1,4 @@
-destination = "bucuRESti"
+destination = "bUCURESTI"
 
 primaLitera = destination[0]
 urmatoareleLitere = destination[1:len(destination)]
