@@ -8,3 +8,4 @@ def isLetter(character):
 
 print(isDigit("5"))
 print(isLetter("7"))
+# print("Pop"<"Popa") ordinea lexicografica
