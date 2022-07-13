@@ -27,5 +27,5 @@ for p in persons:
         i = int(i)
         if i <= 29:
             print ("Ion are :{}".format(i))
-    except:
-        ValueError()
+    except ValueError:
+        print(" could not convert string to int!")
