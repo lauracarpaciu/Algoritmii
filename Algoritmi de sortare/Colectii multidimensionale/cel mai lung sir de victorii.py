@@ -16,5 +16,5 @@ def ceamailungasecvdevict(outcomes):
     return mostwins
 
 
-result = ["L","W","W","W","D"]
+result = ["L","W","W","D"]
 print("Cea mai lunga secventa de victorii:{}".format(ceamailungasecvdevict(result)))
