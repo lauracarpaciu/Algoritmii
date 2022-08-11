@@ -4,6 +4,16 @@ class BSTNode:
     left=None
     right=None
 
+def isNumberinTree(needle,tree):
+    if tree==None:
+        return False
+
+    if needle==tree.value:
+        return True
+    if needle < tree.value:
+        return  isNumberinTree(needle,tree.left)
+    return  isNumberinTree(needle,tree.right)
+
 numbers=[33,2,15,43,100,50,22,3,14]
 root= BSTNode(numbers[0])
 
@@ -37,3 +47,4 @@ def printAscendingOrder(tree=None):
 
 
 printAscendingOrder(root)
+print(isNumberinTree(22,root))
