@@ -27,3 +27,24 @@ def findPairswithHashTable(numbers,P):
 
 
 findPairswithHashTable([1,5,2,10,6,4,3],12)
+
+def findPairsBySortedArray(numbers,P):
+    sortedNumbers=sorted(numbers)
+
+    left=0
+    right=len(sortedNumbers)-1
+    while left < right:
+        firstNumber=sortedNumbers[left]
+        secondNumber=sortedNumbers[right]
+        currentProduct=firstNumber*secondNumber
+
+        if currentProduct==P:
+            print("Found {}".format(firstNumber),"Found {}".format(secondNumber))
+
+        if currentProduct > P:
+            right -= 1
+        else:
+            left += 1
+
+
+findPairsBySortedArray([1,5,2,10,6,4,3],12)
