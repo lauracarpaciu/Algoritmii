@@ -1,3 +1,6 @@
+import math
+
+
 def recursiveBinarySearch(x,sortedArray,start,end):
     if start > end:
         return False
@@ -14,3 +17,12 @@ def recursiveBinarySearch(x,sortedArray,start,end):
 
 
 print(recursiveBinarySearch(10,[10,20,30,40,50],0,4))
+
+def recursiveLog(value):
+
+    if value <= 1:
+        return 1
+    return 1 + recursiveLog(math.floor(value/2))
+
+
+print(recursiveLog(100))

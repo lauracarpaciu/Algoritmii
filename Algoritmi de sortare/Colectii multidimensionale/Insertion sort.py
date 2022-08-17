@@ -6,7 +6,7 @@ def getInserPosition(elem, arr):
         if elem <= arr[i]:
             return i
 
-    return len(arr)
+    return len(arr)-1
 
 def moveElemenToRight(arr,start):
     for i in range(len(arr),-1):

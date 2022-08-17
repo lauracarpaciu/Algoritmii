@@ -15,4 +15,4 @@ def getCheaperOption(distance):
     else:
         print("Plain")
 
-getCheaperOption(350)        
+getCheaperOption(350)

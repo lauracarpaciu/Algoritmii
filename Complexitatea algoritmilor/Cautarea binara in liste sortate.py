@@ -1,6 +1,5 @@
 import math
 
-
 def binarySearch(values,needle):
     start=0
     end=len(values)-1

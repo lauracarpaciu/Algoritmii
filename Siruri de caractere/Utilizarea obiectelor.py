@@ -18,7 +18,7 @@ persons = [
     ("Ion", 63),
     ("Ion",29 ),
 ]
-persons.append( ("Ion",29 ))
+persons.append( ("Ion",26 ))
 
 for p in persons:
     for i in p:
@@ -26,6 +26,6 @@ for p in persons:
     try:
         i = int(i)
         if i <= 29:
-            print ("Ion are :{}".format(i))
+            print ("Ion are varsta :{}".format(i))
     except ValueError:
         print(" could not convert string to int!")

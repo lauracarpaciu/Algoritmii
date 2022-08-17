@@ -1,4 +1,4 @@
-varste = [15,20,30,17,24,30,35,30,20,28,40]
+varste = [15,20,30,17,24,35,35,35,20,28,40]
 
 def getmostfrequrntage(ages, i=0):
     maxPeoples = 0
