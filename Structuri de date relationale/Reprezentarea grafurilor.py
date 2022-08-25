@@ -24,17 +24,23 @@ class MyGraph:
 
 
     def printLinks(self,nodeName):
-        node=self.__nodes[nodeName]
-
-        if(not node):
-            print("Node does not exist")
-            return
+        try:
+            node=self.__nodes[nodeName]
+            print(node)
+        except KeyError:
+           print("Nu exista acest nod")
+        # if(not node):
+        #     print("Node does not exist")
+        #     return
 
 friendsGraph=MyGraph()
 friendsGraph.addNode("A",["B","D"])
 friendsGraph.addNode("B",["A","D"])
 friendsGraph.addNode("C",["D"])
 friendsGraph.addNode("D",["A","B","C"])
-
 friendsGraph.printLinks("A")
+friendsGraph.printLinks("B")
+friendsGraph.printLinks("C")
+friendsGraph.printLinks("D")
+friendsGraph.printLinks("E")
 
