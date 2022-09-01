@@ -1,18 +1,28 @@
-def calculatePriceByTrain(distance):
-    cost = distance*1
-    return cost
+def calcululPretuluicuTrenul(distanta):
 
-def calculatePriceByPlain(distance):
-    cost = distance*0.5+200
-    return cost
+    pretul = distanta*1
+
+    return pretul
+
+
+def calcululPretuluicuAvionul(distanta):
+
+    pretul = distanta*0.5+200
+
+    return pretul
 
 def getCheaperOption(distance):
-    costByTrain=calculatePriceByTrain(distance)
-    costByPlain = calculatePriceByPlain(distance)
 
-    if costByTrain<costByPlain:
+    costByTrain = calcululPretuluicuTrenul(distance)
+
+    costByPlain = calcululPretuluicuAvionul(distance)
+
+    if costByTrain < costByPlain:
+
         print("Train")
+
     else:
+
         print("Plain")
 
 getCheaperOption(350)
