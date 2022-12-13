@@ -1,6 +1,6 @@
 temp = [9.0, 8.8, 8.9 , 9.2 , 9.0]
 
-def min(numbers, minimum = 99999):
+def MIN(numbers, minimum = 99999):
     l=[]
     for num in numbers:
          if num < minimum:
@@ -8,4 +8,4 @@ def min(numbers, minimum = 99999):
 
     return minimum
 
-print(min(temp))
+print(MIN(temp))

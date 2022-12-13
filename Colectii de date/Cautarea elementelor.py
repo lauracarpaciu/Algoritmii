@@ -1,3 +1,5 @@
+# cautam daca yn element este prezent(absent) in lista,si returnam True/False
+
 years = [2111,2011,2010,2012,2015,2020,2014]
 l = []
 # for i in years:
@@ -7,7 +9,7 @@ l = []
 #
 # print(l)
 
-def hasinput(years):
+def hasInput(years):
      for i in years:
         # print(i)
         if i <= (2021 - 8):
@@ -15,4 +17,4 @@ def hasinput(years):
         return False
 
 
-print(hasinput(years))
+print(hasInput(years))
